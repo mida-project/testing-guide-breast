@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=black,
+}
+
+\title{
+MIDA
+\\
+User Testing Guide
+\\
+\textit{Multi-Modality} vs \textit{AI-Assisted}
+\\
+First Comparison
+}
+
+\author{
+Francisco Maria Calisto\\
+\texttt{francisco.calisto@tecnico.ulisboa.pt}
+}
+
+\date{07/03/2019}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Prototype:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant}{prototype-multi-modality-assistant} \hfill \textbf{Version:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/tree/9a912aea8d156f53e846b15bb29a09fc046bd731}{v1.0.1-alpha}
+
+\textbf{Milestone:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/milestone/1}{1.0.1-alpha} \hfill \textbf{Release:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/releases/tag/v1.0.1-alpha}{v1.0.1-alpha}
+
+\hfill
+
+\textbf{DICOM:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server}{dicom-server}
+
+\textbf{Commit:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server/tree/80191e9941c24043c7f612b2dadcd415c060bf96}{80191e9941c24043c7f612b2dadcd415c060bf96}
+
+\hfill
+
+\textbf{Deployment Environment:} Localhost \hfill \textbf{Deployment Server:} Localhost
+
+\textbf{Link:} \hyperlink{http://www.breastscreening.io/dashboard/}{breastscreening.io/dashboard}
+
+\hfill
+
+\textbf{Main Server:} \hyperlink{http://localhost:8486/src/public/index.html}{Localhost} \hfill \textbf{Port:} 8486
+
+\textbf{Private IP:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost} \hfill \textbf{Public IP:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost}
+
+\textbf{Private Domain:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost}
+
+\hfill
+
+\textbf{DICOM Server:} \hyperlink{http://localhost:8448/app/explorer.html}{Localhost} \hfill \textbf{Port:} 8448
+
+\textbf{Private IP:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost} \hfill \textbf{Public IP:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost}
+
+\textbf{Private Domain:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost} \hfill \textbf{From:} 8448
+
+\clearpage
+
+\input{sections/introduction}
+\input{sections/material}
+\input{sections/description}
+\input{sections/methodology}
+\input{sections/procedures}
+\input{sections/tasks}
+\input{sections/measurements}
+\input{sections/goals}
+\input{sections/results}
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references.bib}
+
+\end{document}
