@@ -9,7 +9,7 @@
 
 Introduction of \textit{AI-Assistive} agents are significant factors which can naturally affect the performance of a medical workflow. While some prior studies~\cite{Calisto:2017:TTM:3132272.3134111, calistobreastscreening, calisto2017mimbcdui} have investigated the functionality of healthcare systems, the \textit{AI-Assisted} acceptability has mostly been overlooked in the existing Health Informatics (HI) literature regarding a Human-Computer Interaction (HCI).
 
-The following Table \ref{table:usability_evaluation_questions} is presenting ???N??? \textit{Research Questions} to have in mind during evaluation. The purpose of this questions is to facilitate systematic user studies regarding our novel \textit{Assistant} in a clinical environment and support user stimulation for the introduction of \textit{AI-Assisted} methods. The proposed issues involve various aspects of workflow combined with either need for satisfaction or division of attention.
+The following Table \ref{table:usability_evaluation_questions} is presenting three main \textit{Research Questions} to have in mind during evaluation. The purpose of this questions is to facilitate systematic user studies~\cite{oliveiraadaptive} regarding our novel \textit{Assistant} in a clinical environment and support user stimulation for the introduction of \textit{AI-Assisted} methods. The proposed issues, involve various aspects of workflow combined with, either need for satisfaction, nor division of attention.
 
 \hfill
 
@@ -17,20 +17,12 @@ The following Table \ref{table:usability_evaluation_questions} is presenting ???
 \centering
 \begin{tabular}{l|l}
 Number & Research Questions                             	         \\ \hline
-1      & How would the user describe the potential adoption of   \\
-       & \textit{AI-Assisted} methods on the Health Institution? \\ \hline
-2      & What are the user oppositions for \textit{AI-Assisted}	 \\
-       & methods?                                                \\ \hline
-3      & What examples of \textit{AI-Assisted} methods does the  \\
-       & user know regarding the Health Institution?             \\ \hline
-4      & What are the obstacles of the user's Health             \\
-       & Institution?                                            \\ \hline
-5      & What is more important for the \textit{AI-Assisted}     \\
-       & information, the BIRADS or Pathology?                   \\ \hline
-6      & Is it important for the user to have the feature of		 \\
-       & Approve, Reject and Justify options?                    \\ \hline
-7      & For the user's opinion, what are the aspects that       \\
-       & influence the decision?                                 \\ \hline
+RQ1.   & What is the impact of an {\it AI} system for avoiding   \\
+       & different types of errors on clinician perception ?     \\ \hline
+RQ2.   & What are the design techniques for setting appropriate  \\
+       & clinician expectations of {\it AI} systems ?            \\ \hline
+RQ3.   & What is the impact of expectation-setting intervention  \\
+       & techniques on satisfaction and acceptance of {\it AI} ? \\ \hline
 
 \end{tabular}
 \caption{Research Evaluation Questions}
@@ -39,12 +31,40 @@ Number & Research Questions                             	         \\ \hline
 
 \hfill
 
-The influence of \textit{AI-Assisted}~\cite{goodfellow2016deep} is an important variable for our empirical analysis. In fact, the trust of the user increases when the user perceived that the \textbf{Assistant} is giving the right inputs and that there will be a consequent increase of the clinician trust in our system.
+The influence of \textit{AI-Assisted}~\cite{goodfellow2016deep} is an important variable for our empirical analysis. In fact, we expect that the trust of the user will increase when the user perceived that the \textit{Assistant} is giving the right inputs and that there will be a consequent increase of the clinician trust in our system. We also want to measure (Section \ref{sec:sec008}) that our \textit{Assistant} can operate at the same level of overall accuracy, {\it i.e.}, total number of correct predictions over all possible predictions. Measuring predictions is typically quantified as precision in contrast with recall. We therefore explore the above {\it Research Questions} and associated each to a set of {\it Hypotheses} following this~\cite{amershi2019guidelines, kocielnik2019will} authors instructions. The first work~\cite{amershi2019guidelines}, describes a set of 18 guidelines for Human-AI Interaction (HAII) being highly useful to answer the {\bf RQ2.} question, and respective hypothesis mapping each with the guidelines. The second work~\cite{kocielnik2019will}, developed by almost the same team, provide us an exploratory study of an {\it Assistant} to study the impact of several methods of expectation-setting, also answering the {\bf RQ2.} question. In both studies, the authors show that different focus on avoiding types of errors lead to a vastly different subjective perceptions ({\it i.e.}, the {\bf RQ1.} question) of accuracy and acceptance ({\it i.e.}, the {\bf RQ3.} question).
 
 \clearpage
 
-The first question, the \textit{How would the user describe the potential adoption of \textit{AI-Assisted} methods on the Health Institution?} question. For the second question, the \textit{What are the user oppositions for \textit{AI-Assisted} methods?} question, we aim to understand what are the user constrains regarding an AI adoption the the user's current workflow. Third, we intend to filter possible examples of the clinical applications of AI on the Health Institutions by asking \textit{What examples of \textit{AI-Assisted} methods does the user know regarding the Health Institution?} directly to the clinician. The fourth question, underlines the reasons why several obstacles are present on the Health Institution, with the question \textit{What are the obstacles of the user's Health Institution?} we can understand the challenges of achieving those issues and what are the solutions for surpass it. On the fifth question, where we ask \textit{What is more important for the \textit{AI-Assisted} information, the BIRADS or Pathology?}, we aim to understand what is more important for the user, the BIRADS or the Pathology~\cite{maicas2018pre} of the patient~\cite{elverici2015nonpalpable}. Almost last, the six question, where we ask for \textit{Is it important for the user to have the feature of \textbf{Approve}, \textbf{Reject} and \textbf{Justify} options?} is an important question to understand the feature needs and options. Last but not least, the seven question, \textit{For the user's opinion, what are the aspects that influence the decision?}, is where we will understand what is the most important information to show to the clinicians, therefore, we can more effectively and efficiently give more accurate information to the users.
+List of associated {\it Research Questions} to respective set of {\it Hypotheses}:
 
-To conclude this section, by doing this questions, we aim to support our user studies by giving our users, the clinicians, the opportunity of improving our empirical analysis regarding user's \textit{open answers}. However, the results should be treated with caution. Several bias exists since we are doing here an ambiguous approach.
+\begin{enumerate}
+\item {\bf RQ1.} What is the impact of an {\it AI} system for avoiding different types of errors on clinician perception ?
+\begin{enumerate}
+\item {\bf H1.1.} An {\it AI} system focused on {\it High Precision} will result in higher perceptions of accuracy.
+\item {\bf H1.2.} An {\it AI} system focused on {\it High Precision} will result in higher acceptance?
+\end{enumerate}
+\item {\bf RQ2.} What are the design techniques for setting appropriate clinician expectations of {\it AI} systems ?
+\begin{enumerate}
+\item {\bf H2.1.} An {\it AI} system that directly is communicating it accuracy to clinicians will reduce the lack between system accuracy and user perception. 
+\item {\bf H2.2.} Providing clinicians explanations (\hyperlink{https://www.darpa.mil/program/explainable-artificial-intelligence}{XAI})~\cite{gunning2017explainable, holzinger2017we} will lead to higher perception of understanding how the {\it AI} system works.
+\item {\bf H2.3.} A first clinician contact with the system will lead to higher perceived level of control over the {\it AI} results.
+\end{enumerate}
+\item {\bf RQ3.} What is the impact of expectation-setting intervention techniques on satisfaction and acceptance of {\it AI} ?
+\begin{enumerate}
+\item {\bf H3.1.} In the mediation of an imperfect {\it AI} system providing clinicians the power of prior interventions will lead to higher acceptance and satisfaction in comparison to a lack of such interventions.
+\end{enumerate}
+\end{enumerate}
+
+For the first question, enumerated as {\bf RQ2.}, we want to explore the impact of our {\it AI} system avoinding errors in regard with clinicians' perception. We will explore how the system, focused on {\it High Precision}, will result in higher perceptions of accuracy ({\bf H1.1.}) and higher acceptance ({\bf H1.2.}). We mapped~\cite{amershi2019guidelines} the {\bf H1.1.} with {\bf G1}, {\bf G2} and {\bf G3} guidelines. On the other hand, we mapped the {\bf H1.2.} with {\bf G5}, {\bf G6} and {\bf G7} guidelines.
+
+The second question, enumerated as {\bf RQ2.}, the prior work of the authors~\cite{kocielnik2019will} show us three major contributions to clinician's expectations: (1) information from external sources ({\bf H2.1.}); (2) reasoning and understanding ({\bf H2.2.}); and (3) first hand experience ({\bf H3.3.}). From here, our second {\it Research Question} explores design techniques for achieving these mechanism pairwise with the work done by the same team on another one~\cite{amershi2019guidelines}. Again, we also associated each of the three {\it Hypotheses} with the set of guidelines~\cite{amershi2019guidelines}. First of all, the {\bf H2.1.} was mapped with {\bf G2}, {\bf G12}, {\bf G15}, {\bf G16} and {\bf G18} guidelines. Second, the {\bf H2.2.} was mapped with {\bf G2}, {\bf G3}, {\bf G4} and {\bf G11} guidelines. And thirdly, the {\bf H2.3.} was mapped with {\bf G2}, {\bf G13}, {\bf G14} and {\bf G17} guidelines.
+
+\clearpage
+
+Finally, for the third question, enumerated as {\bf RQ3.}, we will expect that a more accurate expectations of an {\it AI} system's capabilities should result in clinicians being better prepared for {\it AI} system imperfections and, therefore, result in higher satisfaction and acceptance. For this question {\it Hypotheses}, enumerated as {\bf H3.1.}, we mapped it with {\bf G8}, {\bf G9} and {\bf G10} guidelines.
+
+Several other questions are in our mind, and could be addressed on both current and future work. For instance, we can ask about \textit{How would the user describe the potential adoption of \textit{AI-Assisted} methods on the Health Institution?} question. For a second question, the \textit{What are the user oppositions for \textit{AI-Assisted} methods?} question, we aim to understand what are the user constrains regarding an {\it AI} adoption the the user's current workflow. Third, we could intend to filter possible examples of the clinical applications of {\it AI} on the Health Institutions by asking \textit{What examples of \textit{AI-Assisted} methods does the user know regarding the Health Institution?} directly to the clinician. A fourth question, could underline the reasons why several obstacles are present on the Health Institution, with the question \textit{What are the obstacles of the user's Health Institution?} we can understand the challenges of achieving those issues and what are the solutions for surpass it. On a fifth question, where we could ask \textit{What is more important for the \textit{AI-Assisted} information, the BIRADS or Pathology?}, we aim to understand what is more important for the user, the BIRADS or the Pathology~\cite{maicas2018pre} of the patient~\cite{elverici2015nonpalpable}. Almost last, a six question, where we could ask for \textit{Is it important for the user to have the feature of \textbf{Approve}, \textbf{Reject} and \textbf{Explain} options?} is an important question to understand the feature needs and options. Last but not least, on a seven question, \textit{For the user's opinion, what are the aspects that influence the decision?}, is where we will we could understand what is the most important information to show to the clinicians, therefore, we can more effectively and efficiently give more accurate information to the users.
+
+To conclude this section, by answering this questions, we aim to support our user studies by giving our users, the clinicians, an opportunity of improving our empirical analysis regarding user's \textit{open answers}. However, the results should be treated with caution. Several bias exists since we are doing here an ambiguous approach.
 
 \clearpage
