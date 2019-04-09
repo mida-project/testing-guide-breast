@@ -4,60 +4,47 @@
 %                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Tasks}
+\section{Evaluation}
 \label{sec:sec006}
 
-During our user tests, we need to ask participants to provide a subjective assessment of their experience using our \textbf{Assistant}. There are several widely used questionnaires giving us different prons-and-cons. However, in most cases, a \hyperlink{https://www.nngroup.com/articles/keep-online-surveys-short/}{single question instrument}~\cite{sauro201210} is the right method for a quantitative usability testing. By taking less time and effort to answer, participants are pursuing to this phase after task while it is minimally disruptive.
+Introduction of \textit{AI-Assistive} agents are significant factors which can naturally affect the performance of a medical workflow. While some prior studies~\cite{Calisto:2017:TTM:3132272.3134111, calistobreastscreening, calisto2017mimbcdui} have investigated the functionality of healthcare systems, the \textit{AI-Assisted} acceptability has mostly been overlooked in the existing Health Informatics (HI) literature regarding a Human-Computer Interaction (HCI).
+
+The following Table \ref{table:usability_evaluation_questions} is presenting ???N??? \textit{Research Questions} to have in mind during evaluation. The purpose of this questions is to facilitate systematic user studies regarding our novel \textit{Assistant} in a clinical environment and support user stimulation for the introduction of \textit{AI-Assisted} methods. The proposed issues involve various aspects of workflow combined with either need for satisfaction or division of attention.
+
+\hfill
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|l}
+Number & Research Questions                             	         \\ \hline
+1      & How would the user describe the potential adoption of   \\
+       & \textit{AI-Assisted} methods on the Health Institution? \\ \hline
+2      & What are the user oppositions for \textit{AI-Assisted}	 \\
+       & methods?                                                \\ \hline
+3      & What examples of \textit{AI-Assisted} methods does the  \\
+       & user know regarding the Health Institution?             \\ \hline
+4      & What are the obstacles of the user's Health             \\
+       & Institution?                                            \\ \hline
+5      & What is more important for the \textit{AI-Assisted}     \\
+       & information, the BIRADS or Pathology?                   \\ \hline
+6      & Is it important for the user to have the feature of		 \\
+       & Approve, Reject and Justify options?                    \\ \hline
+7      & For the user's opinion, what are the aspects that       \\
+       & influence the decision?                                 \\ \hline
+
+\end{tabular}
+\caption{Research Evaluation Questions}
+\label{table:usability_evaluation_questions}
+\end{table}
+
+\hfill
+
+The influence of \textit{AI-Assisted}~\cite{goodfellow2016deep} is an important variable for our empirical analysis. In fact, the trust of the user increases when the user perceived that the \textbf{Assistant} is giving the right inputs and that there will be a consequent increase of the clinician trust in our system.
 
 \clearpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The first question, the \textit{How would the user describe the potential adoption of \textit{AI-Assisted} methods on the Health Institution?} question. For the second question, the \textit{What are the user oppositions for \textit{AI-Assisted} methods?} question, we aim to understand what are the user constrains regarding an AI adoption the the user's current workflow. Third, we intend to filter possible examples of the clinical applications of AI on the Health Institutions by asking \textit{What examples of \textit{AI-Assisted} methods does the user know regarding the Health Institution?} directly to the clinician. The fourth question, underlines the reasons why several obstacles are present on the Health Institution, with the question \textit{What are the obstacles of the user's Health Institution?} we can understand the challenges of achieving those issues and what are the solutions for surpass it. On the fifth question, where we ask \textit{What is more important for the \textit{AI-Assisted} information, the BIRADS or Pathology?}, we aim to understand what is more important for the user, the BIRADS or the Pathology~\cite{maicas2018pre} of the patient~\cite{elverici2015nonpalpable}. Almost last, the six question, where we ask for \textit{Is it important for the user to have the feature of \textbf{Approve}, \textbf{Reject} and \textbf{Justify} options?} is an important question to understand the feature needs and options. Last but not least, the seven question, \textit{For the user's opinion, what are the aspects that influence the decision?}, is where we will understand what is the most important information to show to the clinicians, therefore, we can more effectively and efficiently give more accurate information to the users.
 
-\hfill
-
-\begin{wrapfigure}{r}{0.50\textwidth}
-\centering
-\includegraphics[width=0.50\textwidth]{img001}
-\caption{Diagram representing the use of the \textbf{Assistant} by clinicians.}
-\label{fig:svmm}
-\end{wrapfigure}
-
-\hfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-We will try to understand if, with the \textit{AI-Assisted} techniques, the clinicians will encounters the most accurate severity (\hyperlink{https://en.wikipedia.org/wiki/BI-RADS}{BIRADS}) of the breast lesions~\cite{american1998breast} and patient's prognostic. For this purpose, we have three patients (Figure \ref{fig:svmm}); each patient has three images in the respective modalities: (i) MG; (ii) US; and (iii) MRI. The clinicians will proceed to the activity of diagnosing the three patients within the support of our \textbf{Assistant} by the observation of ALL images.
-
-\hfill
-
-In our \textbf{User Testing Guide} a set of tasks is necessary and carefully crafted. Our test studies involve asking participants to perform a set of tasks. By looking at what our user need to do with our system, our tasks are realistic as possible. We are not describing the exact steps participants need to take. We achieve that by avoiding the precise language used as labels in our system. The tasks are emotionally neutrals. And we did several \hyperlink{https://www.nngroup.com/articles/pilot-testing/}{pilot tests} to prevent misleading situations saving us from wasting resources by accidentally use a lousy task or from getting bad data. The tasks are as follows.
-
-\hfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-List of stand alone tasks:
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\hfill
-
-\begin{itemize}
-\item[] \textbf{Task 1.1:} Classify \textit{Patient 1} on the \textbf{Assistant};
-\item[] \textbf{Task 1.2:} Classify \textit{Patient 2} on the \textbf{Assistant};
-\item[] \textbf{Task 1.3:} Classify \textit{Patient 3} on the \textbf{Assistant};
-\end{itemize}
-
-\hfill
-
-\begin{itemize}
-\item[] \textbf{Task 2.1:} Freely explore \textit{Patient 1} on the \textbf{Assistant};
-\item[] \textbf{Task 2.2:} Freely explore \textit{Patient 2} on the \textbf{Assistant};
-\item[] \textbf{Task 2.3:} Freely explore \textit{Patient 3} on the \textbf{Assistant};
-\end{itemize}
-
-\hfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To conclude this section, by doing this questions, we aim to support our user studies by giving our users, the clinicians, the opportunity of improving our empirical analysis regarding user's \textit{open answers}. However, the results should be treated with caution. Several bias exists since we are doing here an ambiguous approach.
 
 \clearpage
