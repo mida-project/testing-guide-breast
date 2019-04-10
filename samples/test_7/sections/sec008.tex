@@ -6,3 +6,51 @@
 
 \section{Metrics}
 \label{sec:sec008}
+
+Our user test metrics refers to user performance measured against specific performance goals necessary to satisfy the test requirements. Scenario completion success rates, adherence to dialog scripts, error rates, and subjective evaluations will be used. Time-to-Completion (TtC)~\cite{ioannidis1998effect} of scenarios will also be collected. From the set of tasks (Section \ref{sec:sec007}), each task corresponds to the set of {\it Phases}, {\it Scenarios} and {\it Activities} (Section \ref{sec:sec001}), meaning that we first need to explain it relations.
+
+The first two tasks, {\it i.e.}, {\bf Task 1.1.1} and {\bf Task 1.1.2}, are related to the {\bf Pha1.} phase, as well as with {\bf Act1.}, {\bf Act2.} and {\bf Act3.} activities. The {\bf Pha2.} phase focus on testing and analyzing the {\it Multi-Modality (MM)} condition, {\it i.e.}, corresponding to {\bf Sce1.} scenario. The six next tasks, {\it i.e.}, {\bf Task 2.1.1}, {\bf Task 2.1.2}, {\bf Task 2.1.3}, {\bf Task 2.2.1}, {\bf Task 2.2.2} and {\bf Task 2.2.3}, are related to {\bf Pha2.} phase. Also, the {\bf Pha2.} phase is related with {\bf Act4.}, {\bf Act5.} and {\bf Act6.} activities for diagnosing {\bf Pat1.}, {\bf Pat2.} and {\bf Pat3.} patients. The second next two tasks, {\it i.e.}, {\bf Task 2.3.1} and {\bf Task 2.3.2}, are related with {\bf Act7.} activity of {\bf Pha2.} phase. Now, on the {\bf Pha3.} phase, we will have a relation between testing and analyzing the {\it Assistant (Assis.)} condition, {\it i.e.}, corresponding to {\bf Sce2.} scenario. The six next tasks, {\it i.e.}, {\bf Task 3.1.1}, {\bf Task 3.1.2}, {\bf Task 3.1.3}, {\bf Task 3.2.1}, {\bf Task 3.2.2} and {\bf Task 3.2.3}, are therefore related to {\bf Pha3.} phase. Also, the {\bf Pha3.} phase is related with {\bf Act8.}, {\bf Act9.}, {\bf Act10.} and {\bf Act11.} activities for diagnosing {\bf Pat1.}, {\bf Pat2.} and {\bf Pat3.} patients. At the end, the last two tasks, {\it i.e.}, {\bf Task 3.3.1} and {\bf Task 3.3.2}, are related with {\bf Act12.} activity for {\bf Pha3.} phase.
+
+\subsection{Patient Classification}
+
+For the patient classification, we will use the well known scale for classifying the breast cancer disease called \hyperlink{https://en.wikipedia.org/wiki/BI-RADS}{BIRADS}~\cite{balleyguier2007birads}. The \hyperlink{https://en.wikipedia.org/wiki/BI-RADS}{BIRADS} scale is a scheme for putting the findings from breast into a small number of well-defined categories~\cite{obenauer2005applications}.
+
+\hfil
+
+The BIRADS assessment categories are:
+
+\begin{itemize}
+\item 0 - Incomplete;
+\item 1 - Negative;
+\item 2 - Benign Findings;
+\item 3 - Probably Benign;
+\item 4 - Suspicious Abnormality;
+\item 5 - Highly Suspicious of Malignancy;
+\item 6 - Known Biopsy Proven Malignancy;
+\end{itemize}
+
+For each participant, we will ask the respective examination and respective BIRADS value. From here, we will register the respective value per each scenario, both {\it i.e.}, {\bf Sce1.} and {\bf Sce2.} scenarios. At the end, we can compare the values provided on {\bf Sce1.}, where we just improve the visualization technique
+
+\subsection{Workload}
+
+\subsection{Usability}
+
+\subsection{Completion}
+
+Each scenario, {\it i.e.}, {\bf Sce1.} and {\bf Sce2.}, will require, or request, that the participant obtains or inputs specific data. This data would be used in course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained. Whether successfully or unsuccessfully. Or the scenario is completed when the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
+
+\subsection{Critical Errors}
+
+Critical Errors are deviations at completion from the targets of the scenario. Obtaining or otherwise reporting of the wrong data value due to participant workflow is a Critical Error. Participants may or may not be aware that the task goal is incorrect or incomplete.
+
+An example of a Critical Error, could be a situation where the participant is not able to open a patient. From this error, we can not even proceed to the next tasks and complete the user test. Despite of the independent completion of the scenario is the goal, we need to guarantee the execution of the test, however, when this errors occur, the facilitator must act.
+
+Critical Errors can also be assigned when the participant initiates, or attempts to initiate, an action that will result in the goal state becoming unobtainable. In general, Critical Errors are unresolved errors preventing completion of the task or errors that produce an incorrect outcome.
+
+\subsection{Non-Critical Errors}
+
+Non-Critical Errors, are errors that are recovered from and by the participant. Or, if not detected, do not result in processing problems or unexpected results. Although Non-Critical Errors can be undetected by the participant, when they are detected they are generally frustrating to the participant.
+
+These errors may be procedural, in which the participant does not complete a scenario in the most optimal means ({\it e.g.}, excessive steps and keystrokes). These errors may also be errors of confusion ({\it e.g.}, initially selecting the wrong function, using a UI control incorrectly such as attempting to edit an un-editable field).
+
+Non-Critical Errors can always be recovered from during the process of completing the scenario.  Exploratory behavior, such as opening the wrong menu while searching for a function, [will, will not (edit Procedure)] be coded as a non-critical error.
