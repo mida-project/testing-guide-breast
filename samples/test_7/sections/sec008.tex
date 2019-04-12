@@ -76,14 +76,40 @@ Again, each participant will provide answers regarding the system's usability in
 
 \subsection{Predictions}
 
-total number of correct predictions divided by all possible predictions... TODO
+Let the {\it Overall Accuracy}~\cite{ashraf2018comparative, li2018digital} be $\O$, a variable following the discrete uniform distribution as $\O \in \mathbb{R}$. The accuracy is used by us to measure how accurate is the overall performance of our solution, considering both positive and negative classes without worrying about data imbalance. Let {\it Total Number of Correct Predictions}~\cite{ashraf2018comparative, li2018digital} be $\tau$, a variable following the discrete uniform distribution as $\tau \in \mathbb{R}$. Let {\it All Possible Predictions}~\cite{ashraf2018comparative, li2018digital} be $\alpha$, a variable following the discrete uniform distribution as $\alpha \in \mathbb{R}$. As follows, we report our computational method.
 
+\hfill
 
+Computational method to measure the {\it Overall Accuracy} of our solution:
 
+\hfill
 
-\subsection{Completion}
+\begin{Form}
+\Large
+\begin{center}
+$Overall~Accuracy$ = $\frac{Total~Number~of~Correct~Predictions}{All~Possible~Predictions}$
+\end{center}
+\end{Form}
 
-Each scenario, {\it i.e.}, {\bf Sce1.} and {\bf Sce2.}, will require, or request, that the participant obtains or inputs specific data. This data would be used in course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained. Whether successfully or unsuccessfully. Or the scenario is completed when the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
+\hfill
+
+\subsection{Eye Tracking}
+
+Eye movement data was collected for several groups of subjects recruited from the same Portuguese institutions, both public and private, with breast domain-expertise levels, while participants inspected (Section \ref{sec:sec007}) breast images. Medical images will be presented to participants on a monitor (Section \ref{sec:sec005}) attached to a 90Hz eye tracking device, called \hyperlink{https://gaming.tobii.com/product/tobii-eye-tracker-4c/}{Tobii Eye Tracker 4C} with reported accuracy for the collection of eye movement data.
+
+For the eye tracking measurements, we will use the work done by Vaidyanathan et al.~\cite{vaidyanathan2014recurrence}, titled as "{\it Recurrence Quantification Analysis Reveals Eye-Movement Behavior Differences between Experts and Novices}". The work uses eye movement data from medical experts and novices, while they inspected several medical images. Most importantly, the work describe and demonstrate how Recurrence Quantification Analysis (RQA)~\cite{anderson2013recurrence}, and the associated measures, can be used to differentiate eye movement behavior during different viewing conditions and image type finding significant differences. From this work, we aim to use their RQA method to measure and quantify certain eye movement aspects, defined as: (1) Recurrence (REC); (2) Determinism (DET); (3) Laminarity (LAM); and (4) Center Of Recurrence Mass (CORM). We are not yet sure if will use all the presented information, however, the hereby {\it User Testing Guide} serves the purpose of presenting all options for the tests. At this point, we are concern with addressing and collecting the maximum user data as we can.
+
+\subsection{Qualitative Evaluation}
+
+Qualitative and subjective evaluations regarding ease of use and satisfaction will be collected via {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}}~\cite{abelson2016supporting, merchant2018digital}, and during debriefing at the conclusion of the session.  The {\it open-ended questions} will utilize free-form responses and feedback, when possible. Whenever possible, it's best to ask {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}} so we can find out more than we can anticipate. We will test our questions by trying to answer them with short answers, and rewrite those to find out more about {\it how} and {\it what}. In some cases, we won't be able to accommodate free-form or write-in answers, though, and then it is necessary to limit the possibilities.
+
+\subsection{Scenario Completion}
+
+Each scenario, {\it i.e.}, {\bf Sce1.} and {\bf Sce2.} scenarios, will require, or request, that the participant obtains, or inputs, specific data. This data would be used in course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained. Whether successfully or unsuccessfully. Or the scenario is completed when the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
+
+\subsection{Time Completion}
+
+The time to complete (ToT)~\cite{delgado2017time, huang2018impact} each scenario, {\it i.e.}, {\bf Sce1.} and {\bf Sce2.}, not including qualitative and subjective evaluation durations, will be recorded. From this measure, it will be also possible to collect more specific metrics, such as the percentage of time that participants follow an optimal path or the number of times participants need to backtrack.
 
 \subsection{Critical Errors}
 
@@ -99,4 +125,4 @@ Non-Critical Errors, are errors that are recovered from and by the participant. 
 
 These errors may be procedural, in which the participant does not complete a scenario in the most optimal means ({\it e.g.}, excessive steps and keystrokes). These errors may also be errors of confusion ({\it e.g.}, initially selecting the wrong function, using a UI control incorrectly such as attempting to edit an un-editable field).
 
-Non-Critical Errors can always be recovered from during the process of completing the scenario.  Exploratory behavior, such as opening the wrong menu while searching for a function, [will, will not (edit Procedure)] be coded as a non-critical error.
+Non-Critical Errors can always be recovered from during the process of completing the scenario. Exploratory behavior, such as opening the wrong menu while searching for a function, will be coded as a non-critical error.
