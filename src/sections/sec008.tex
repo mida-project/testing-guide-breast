@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                 %
+%                     SECTION                     %
+%                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Metrics}
+\label{sec:sec008}
+
+Our user test metrics refers to user performance measured against specific performance goals necessary to satisfy the test requirements. Scenario completion success rates, adherence to dialog scripts, error rates, and subjective evaluations will be used. Time-to-Completion (TtC)~\cite{ioannidis1998effect} of scenarios will also be collected. From the set of tasks (Section \ref{sec:sec007}), each task corresponds to the set of {\it Phases}, {\it Scenarios} and {\it Activities} (Section \ref{sec:sec001}), meaning that we first need to explain it relations.
+
+\subsection{Workload}
+
+To measure the workload, we used the \hyperlink{https://en.wikipedia.org/wiki/NASA-TLX}{NASA Task Load Index (NASA-TLX)}~\cite{ramkumar2017using} scale. The scale is a subjective workload assessment tool that will allow us to perform subjective workload assessments on our participants. For the purpose, we created a repository~\cite{https://doi.org/10.13140/rg.2.2.25301.06883, francisco_maria_calisto_2018_1435044} to cover this need of content.
+
+\hfill
+
+By incorporating a multi-dimensional rating procedure, NASA-TLX derives an overall workload score based on a weighted average of ratings on six sub-scales:
+
+\begin{itemize}
+\item Mental Demand
+\item Physical Demand
+\item Temporal Demand
+\item Performance
+\item Effort
+\item Frustration 
+\end{itemize}
+
+
+\subsection{Usability}
+
+To measure the usability, we used the \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{System Usability Scale (SUS)}~\cite{orfanou2015perceived}. The \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{SUS} provides a ``quick and dirty", reliable tool for measuring the usability. It consists of a 10 item questionnaire with ten response options for respondents; from {\it Strongly Agree} to {\it Strongly Disagree}. Originally created by John Brooke in 1986, it allows you to evaluate a wide variety of products and services, including hardware, software, mobile devices, websites and applications. For the purpose, we created a repository~\cite{https://doi.org/10.13140/rg.2.2.26978.79044, francisco_maria_calisto_2018_1435042} to cover this need of content.
+
+\clearpage
+
+When using \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{SUS}, participants are asked to score the following 10 items with one of ten responses that range from {\bf Strongly Agree} to {\bf Strongly Disagree}:
+
+\begin{enumerate}
+\item I think that I would like to use this system frequently.
+\item I found the system unnecessarily complex.
+\item I thought the system was easy to use.
+\item I think that I would need the support of a technical person to be able to use this system.
+\item I found the various functions in this system were well integrated.
+\item I thought there was too much inconsistency in this system.
+\item I would imagine that most people would learn to use this system very quickly.
+\item I found the system very cumbersome to use.
+\item I felt very confident using the system.
+\item I needed to learn a lot of things before I could get going with this system.
+\end{enumerate}
+
+\subsection{Predictions}
+
+To measure system predictions with purpose of comparing participants acceptance, we applied our own computational method. The computational method is as follows, while we defined several variables to it, defined next to this information and further explained. Let the {\it Overall Accuracy}~\cite{ashraf2018comparative, li2018digital} be $\O$, a variable following the discrete uniform distribution as $\O \in \mathbb{R}$. The accuracy is used by us to measure how accurate is the overall performance of our solution, considering both positive and negative classes without worrying about data imbalance. Let {\it Total Number of Correct Predictions}~\cite{ashraf2018comparative, li2018digital} be $\tau$, a variable following the discrete uniform distribution as $\tau \in \mathbb{R}$. Let {\it All Possible Predictions}~\cite{ashraf2018comparative, li2018digital} be $\alpha$, a variable following the discrete uniform distribution as $\alpha \in \mathbb{R}$. As follows, we report our computational method.
+
+\hfill
+
+Computational method to measure the {\it Overall Accuracy} of our solution:
+
+\hfill
+
+\begin{Form}
+\Large
+\begin{center}
+$Overall~Accuracy$ = $\frac{Total~Number~of~Correct~Predictions}{All~Possible~Predictions}$
+\end{center}
+\end{Form}
+
+\hfill
+
+\subsection{Qualitative Evaluation}
+
+Qualitative and subjective evaluations regarding ease of use and satisfaction will be collected via {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}}~\cite{abelson2016supporting, merchant2018digital}, and during debriefing at the conclusion of the session.  The {\it open-ended questions} will utilize free-form responses and feedback, when possible. Whenever possible, it's best to ask {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}} so we can find out more than we can anticipate. We will test our questions by trying to answer them with short answers, and rewrite those to find out more about {\it how} and {\it what}. In some cases, we won't be able to accommodate free-form or write-in answers, though, and then it is necessary to limit the possibilities.
+
+\subsection{Scenario Completion}
+
+Each scenario, will require, or request, that the participant obtains, or inputs, specific data. This data would be used in course of a typical task. The scenario is completed when the participant indicates the scenario's goal has been obtained. Whether successfully or unsuccessfully. Or the scenario is completed when the participant requests and receives sufficient guidance as to warrant scoring the scenario as a critical error.
+
+\subsection{Time Completion}
+
+The time to complete (ToT)~\cite{delgado2017time, huang2018impact} each scenario, not including qualitative and subjective evaluation durations, will be recorded. From this measure, it will be also possible to collect more specific metrics, such as the percentage of time that participants follow an optimal path or the number of times participants need to backtrack.
+
+\subsection{Critical Errors}
+
+Critical Errors are deviations at completion from the targets of the scenario. Obtaining or otherwise reporting of the wrong data value due to participant workflow is a Critical Error. Participants may or may not be aware that the task goal is incorrect or incomplete.
+
+An example of a Critical Error, could be a situation where the participant is not able to open a patient. From this error, we can not even proceed to the next tasks and complete the user test. Despite of the independent completion of the scenario is the goal, we need to guarantee the execution of the test, however, when this errors occur, the facilitator must act.
+
+Critical Errors can also be assigned when the participant initiates, or attempts to initiate, an action that will result in the goal state becoming unobtainable. In general, Critical Errors are unresolved errors preventing completion of the task or errors that produce an incorrect outcome.
+
+\subsection{Non-Critical Errors}
+
+Non-Critical Errors, are errors that are recovered from and by the participant. Or, if not detected, do not result in processing problems or unexpected results. Although Non-Critical Errors can be undetected by the participant, when they are detected they are generally frustrating to the participant.
+
+These errors may be procedural, in which the participant does not complete a scenario in the most optimal means ({\it e.g.}, excessive steps and keystrokes). These errors may also be errors of confusion ({\it e.g.}, initially selecting the wrong function, using a UI control incorrectly such as attempting to edit an un-editable field).
+
+Non-Critical Errors can always be recovered from during the process of completing the scenario. Exploratory behavior, such as opening the wrong menu while searching for a function, will be coded as a non-critical error.
