@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[acronym,nomain,nonumberlist]{glossaries}
 \usepackage{enumitem}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -7,6 +8,23 @@
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+
+\makeglossaries
+
+\newacronym{AI}{AI}{Artificial Intelligence}
+\newacronym{BIRADS}{BIRADS}{Breast Imaging Reporting and Data System}
+\newacronym{DICOM}{DICOM}{Digital Imaging and Communications in Medicine}
+\newacronym{MM}{MM}{Multi-Modality}
+\newacronym{SS}{SS}{Single-Modality}
+\newacronym{MG}{MG}{MammoGraphy}
+\newacronym{CC}{CC}{CranioCaudal}
+\newacronym{MLO}{MLO}{MedioLateral Oblique}
+\newacronym{US}{US}{UltraSound}
+\newacronym{MRI}{MRI}{Magnetic Resonance Imaging}
+\newacronym{MI}{MI}{Medical Imaging}
+\newacronym{MIDA}{MIDA}{Medical Imaging Diagnosis Assistant}
+\newacronym{MIMBCD-UI}{MIMBCD-UI}{MI Multimodality Breast Cancer Diagnosis UI}
+\newacronym{UI}{UI}{User Interface}
 
 \hypersetup{
     colorlinks=true,
@@ -89,6 +107,11 @@ Francisco Maria Calisto\\
 \input{sections/sec010}
 \input{sections/sec011}
 \input{sections/sec012}
+
+\clearpage
+
+\glsaddall
+\printglossary[type=\acronymtype,title=Acronyms]
 
 \clearpage
 
