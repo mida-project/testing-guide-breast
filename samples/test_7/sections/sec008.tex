@@ -50,7 +50,6 @@ By incorporating a multi-dimensional rating procedure, NASA-TLX derives an overa
 
 At the end, each participant will provide answers regarding the workload information during {\bf Act5.} activity, of {\bf Sce1.} and {\bf Sce2.} scenarios, on both {\bf Pha1.} and {\bf Pha2.} phases respectively. This will also cover both {\bf Task 2.3.1} and {\bf Task 3.3.1} tasks.
 
-
 \subsection{Usability}
 
 To measure the usability, we used the \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{System Usability Scale (SUS)}~\cite{orfanou2015perceived}. The \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{SUS} provides a ``quick and dirty", reliable tool for measuring the usability. It consists of a 10 item questionnaire with ten response options for respondents; from {\it Strongly Agree} to {\it Strongly Disagree}. Originally created by John Brooke in 1986, it allows you to evaluate a wide variety of products and services, including hardware, software, mobile devices, websites and applications. For the purpose, we created a repository~\cite{https://doi.org/10.13140/rg.2.2.26978.79044, francisco_maria_calisto_2018_1435042} to cover this need of content.
@@ -74,24 +73,40 @@ When using \hyperlink{https://en.wikipedia.org/wiki/System_usability_scale}{SUS}
 
 Again, each participant will provide answers regarding the system's usability information during {\bf Act5.} activity, of {\bf Sce1.} and {\bf Sce2.} scenarios, from both {\bf Pha1.} and {\bf Pha2.} phases respectively. This will also cover both {\bf Task 2.3.1} and {\bf Task 3.3.1} tasks.
 
+\subsection{Trust}
+
+The \gls{DOTS}~\cite{francisco_maria_calisto_2019_2671717, https://doi.org/10.13140/rg.2.2.23078.37448} was introduced on a recent work~\cite{Cai:2019:EEE:3301275.3302289, Cai:2019:HTC:3290605.3300234}, introducing the concept of measuring \underline{trust} across {\it AI} systems.
+For that, we created a repository~\cite{francisco_maria_calisto_2019_2671717} supporting our user tests.
+\gls{DOTS} is a scale to measure the trustworthiness of our {\it AI-Assisted} system.
+Therefore, we created a three items list of questions on a 20-point scale of Likert-style~\cite{joshi2015likert}.
+The following list, represents the questions adapted from this model~\cite{mayer1995integrative} addressing each of the three items, {\it i.e.}, {\it ability}, {\it benevolence} and {\it integrity}.
+
+\begin{enumerate}
+\item How much was the system able to address all tasks? ({\bf Ability})
+\item How much was the system concerned about satisfying my needs during interaction? ({\bf Benevolence})
+\item How much was the system upholding principles that are important to me? ({\bf Integrity})
+\end{enumerate}
+
+Each participant will provide answers regarding the system's trustworthiness during {\bf Act5.} activity, of {\bf Sce2.} scenario, from {\bf Pha2.} phase.
+This will cover the {\bf Task 3.3.1} from the list of tasks.
+
 \subsection{Predictions}
 
-To measure system predictions with purpose of comparing participants acceptance, we applied our own computational method. The computational method is as follows, while we defined several variables to it, defined next to this information and further explained. Let the {\it Overall Accuracy}~\cite{ashraf2018comparative, li2018digital} be $\O$, a variable following the discrete uniform distribution as $\O \in \mathbb{R}$. The accuracy is used by us to measure how accurate is the overall performance of our solution, considering both positive and negative classes without worrying about data imbalance. Let {\it Total Number of Correct Predictions}~\cite{ashraf2018comparative, li2018digital} be $\tau$, a variable following the discrete uniform distribution as $\tau \in \mathbb{R}$. Let {\it All Possible Predictions}~\cite{ashraf2018comparative, li2018digital} be $\alpha$, a variable following the discrete uniform distribution as $\alpha \in \mathbb{R}$. As follows, we report our computational method.
+To measure system predictions with purpose of comparing participants acceptance, we applied our own computational method.
+The computational method is as follows, while we defined several variables to it, defined next to this information and further explained.
+Let the {\it Overall Accuracy}~\cite{ashraf2018comparative, li2018digital} be $\O$, a variable following the discrete uniform distribution as $\O \in \mathbb{R}$. The accuracy is used by us to measure how accurate is the overall performance of our solution, considering both positive and negative classes without worrying about data imbalance. Let {\it Total Number of Correct Predictions}~\cite{ashraf2018comparative, li2018digital} be $\tau$, a variable following the discrete uniform distribution as $\tau \in \mathbb{R}$.
+Let {\it All Possible Predictions}~\cite{ashraf2018comparative, li2018digital} be $\alpha$, a variable following the discrete uniform distribution as $\alpha \in \mathbb{R}$. As follows, we report our computational method.
 
 \hfill
 
 Computational method to measure the {\it Overall Accuracy} of our solution:
 
-\hfill
-
 \begin{Form}
-\Large
+\large
 \begin{center}
 $Overall~Accuracy$ = $\frac{Total~Number~of~Correct~Predictions}{All~Possible~Predictions}$
 \end{center}
 \end{Form}
-
-\hfill
 
 \subsection{Eye Tracking}
 
@@ -101,7 +116,9 @@ For the eye tracking measurements, we will use the work done by Vaidyana-than et
 
 \subsection{Qualitative Evaluation}
 
-Qualitative and subjective evaluations regarding ease of use and satisfaction will be collected via {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}}~\cite{abelson2016supporting, merchant2018digital}, and during debriefing at the conclusion of the session.  The {\it open-ended questions} will utilize free-form responses and feedback, when possible. Whenever possible, it's best to ask {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}} so we can find out more than we can anticipate. We will test our questions by trying to answer them with short answers, and rewrite those to find out more about {\it how} and {\it what}. In some cases, we won't be able to accommodate free-form or write-in answers, though, and then it is necessary to limit the possibilities.
+Qualitative and subjective evaluations regarding ease of use and satisfaction will be collected. This collection will be done via {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}}~\cite{abelson2016supporting, merchant2018digital}, and during debriefing at the conclusion of the session.
+
+The {\it open-ended questions} will utilize free-form responses and feedback, when possible. Whenever possible, it's best to ask {\it \hyperlink{https://www.nngroup.com/articles/open-ended-questions/}{open-ended questions}} so we can find out more than we can anticipate. We will test our questions by trying to answer them with short answers, and rewrite those to find out more about {\it how} and {\it what}. In some cases, we won't be able to accommodate free-form or write-in answers, though, and then it is necessary to limit the possibilities.
 
 \subsection{Scenario Completion}
 
